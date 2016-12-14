@@ -1,16 +1,14 @@
 #ifndef clock_synchronization_h
 #define clock_synchronization_h
 
-class clock_synchronization
+class cycle_timing
 {
 
 public:
   int m_clock;
-  int t_clock;
-  
-  int offset = 0;
   int m_cycle;
-  clock_synchronization(void);
+  int offset = 0;
+  cycle_timing(void);
   void setup_clock(int cycle,int nowTime);
   int gat_clock(void);
   
