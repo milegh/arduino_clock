@@ -1,16 +1,17 @@
-#ifndef clock_synchronization_h
-#define clock_synchronization_h
+#ifndef cycle_timing_h
+#define cycle_timing_h
 
 class cycle_timing
 {
 
 public:
-  int m_clock;
-  int m_cycle;
-  int offset = 0;
+  unsigned long m_clock;
+  
+  unsigned long offset = 0;
+  unsigned long m_cycle;
   cycle_timing(void);
-  void setup_clock(int cycle,int nowTime);
-  int gat_clock(void);
+  void setup_clock(unsigned long cycle,unsigned long nowTime);
+  long gat_clock(void);
   
 };
 
