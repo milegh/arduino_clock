@@ -13,6 +13,7 @@ long cycle_timing::gat_clock() {
   }
   
 
+	
 void cycle_timing::setup_clock(unsigned long cycle,unsigned long nowTime){
 	m_cycle = cycle;
 	offset = nowTime - (millis() / 1000)% cycle;
